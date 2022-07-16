@@ -28,8 +28,9 @@ button.addEventListener("click", function(e) {
 function animateButton(element) {
     element.classList.add('animate__animated', 'animate__flip');
     element.addEventListener('animationend', () => {
-        element.classList.remove('animate__animated', 'animate__flip');
-});
+            element.classList.remove('animate__animated', 'animate__flip');
+    });
+}
 
 buttonWhell.onclick = () => {
     whell.classList.toggle('rotate')
