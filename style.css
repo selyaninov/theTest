@@ -1,0 +1,30 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox {
+    width: 400px;
+    height: 300px;
+    border-radius: 24px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    border: none;
+    background-color: yellow;
+    color: black;
+    border-radius: 12px;
+}
