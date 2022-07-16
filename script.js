@@ -1,5 +1,7 @@
 const button = document.querySelector('.button')
-const background = document.querySelector('.wrapper')
+const whell = document.querySelector('.whell')
+const background = document.querySelector('#container1')
+const buttonWhell = document.querySelector('#buttonWhell')
 
 function changeColor1() {
     background.style.background = "#aa00ff"
@@ -17,4 +19,8 @@ function changeColor2() {
 
 button.onclick = () => {
     changeColor1()
+}
+
+buttonWhell.onclick = () => {
+    whell.classList.toggle('rotate')
 }
