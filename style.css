@@ -8,6 +8,7 @@
     height: 100vh;
     background-color: yellow;
     display: flex;
+    transition: 1s all;
     justify-content: center;
     align-items: center;
 }
