@@ -3,17 +3,37 @@
     padding: 0;
 }
 
-.wrapper {
+body {
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.container {
     width: 100vw;
     height: 100vh;
-    background-color: yellow;
     display: flex;
     transition: 1s all;
     justify-content: center;
     align-items: center;
 }
 
-.contentBox {
+#container1 {
+    background-color: yellow;
+}
+
+#container2 {
+    background-color: #00aaff;
+}
+
+#sectionBox2 {
+    flex-direction: column;
+}
+
+.sectionBox {
     width: 400px;
     height: 300px;
     border-radius: 24px;
@@ -39,4 +59,27 @@ h1 {
     font-family: 'Edu VIC WA NT Beginner', cursive;
     font-weight: 400;
     font-size: 2.5em;
+}
+
+.whell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#00aaff, #005eff);
+    border-radius: 50%;
+    color: #fff;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    margin-bottom: 24px;
+}
+
+.whell.rotate {
+    animation: rotate 10s linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
 }

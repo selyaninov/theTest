@@ -1,5 +1,7 @@
 const button = document.querySelector('.button')
-const background = document.querySelector('.wrapper')
+const whell = document.querySelector('.whell')
+const background = document.querySelector('#container1')
+const buttonWhell = document.querySelector('#buttonWhell')
 
 function changeColor1() {
     background.style.background = "#aa00ff"
@@ -27,5 +29,8 @@ function animateButton(element) {
     element.classList.add('animate__animated', 'animate__flip');
     element.addEventListener('animationend', () => {
         element.classList.remove('animate__animated', 'animate__flip');
-    });
+});
+
+buttonWhell.onclick = () => {
+    whell.classList.toggle('rotate')
 }
